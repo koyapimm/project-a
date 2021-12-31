@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <conio.h>
+void main()
+{
+    int sayi, n=2, flag=0;
+    
+    printf("Sayı giriniz: ");
+    scanf("%d", &sayi);
+    
+    if(sayi==0) printf("Sayı asal değildir.");
+    else if(sayi==1) printf("Sayı asal değildir.");
+    
+    for(n;n<sayi;n++){
+        if(sayi%n == 0){
+            printf("Sayı asal değildir.");
+            flag=1;
+            break;
+        }
+    }if(flag==0) printf("Sayı asaldır.");
+}
